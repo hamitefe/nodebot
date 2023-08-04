@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Bot Manager</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./skripts/console.js" defer></script>
+    <script src="./skripts/createbot.js" defer></script>
+    <script src="./skripts/listbots.js" defer></script>
+    <script src="./skripts/command.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="console">
+        <span id="consoletitle">CONSOLE</span>
+        <div id="consolemessages"></div>
+     </div>
+     <input type="text" placeholder="command" id="consoleinput">
+
+     <div id="bots">
+        <span id="botstitle">BOTS</span>
+        <button id="createbot">+</button><br>
+        <div id="botlist"></div>
+    </div>
+
+     <div id="createbotscreen">
+        <div id="botoptionholder">
+            <input type="text" id="botname" placeholder="username">
+            <input type="url" id="bothost" placeholder="host">
+            <input type="text" id="botauth" placeholder="auth type (offline/mojang/microsoft)">
+            <input type="password" id="botpassword" placeholder="password">
+            <button id="submitbot">CREATE</button>
+        </div>
+     </div>
+
+    </body>
+</html>
